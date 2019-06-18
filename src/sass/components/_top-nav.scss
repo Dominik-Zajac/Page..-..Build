@@ -11,22 +11,16 @@
             margin-top: 19px;
 
             span {
-                color: #696969;
-                font-family: Roboto;
-                font-size: 14px;
-                font-weight: 400;
+                @include text($main-font, $paragraph-size, 400, #696969);
             }
 
             .nav-icon-msg {
-                width: 20px;
-                height: 15px;
+                @include size(20px, 15px);
             }
 
             .nav-icon-phone {
-                width: 15px;
-                height: 15px;
+                @include size(15px, 15px);
             }
         }
     }
-
 }
