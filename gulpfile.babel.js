@@ -78,6 +78,7 @@ gulp.task('server', () => {
 
 gulp.task('watch', ['default'], function () {
     gulp.watch('src/sass/app.scss', ['sass']);
+    gulp.watch('src/sass/components/*.scss', ['sass']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/*.html', ['static']);
     gulp.start('server');
