@@ -1,0 +1,28 @@
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 101px;
+    background-color: #fff;
+
+    .row-nav {
+        display: flex;
+        align-items: center;
+        width: 60vw;
+
+        .nav-link {
+            margin-top: 10px;
+            color: #3b404f;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                color: #fab702;
+                font-weight: 500;
+            }
+        }
+    }
+}

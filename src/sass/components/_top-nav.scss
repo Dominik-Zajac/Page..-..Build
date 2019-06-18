@@ -1,34 +1,32 @@
 .top-nav {
+    display: flex;
+    justify-content: center;
     height: 56px;
     background-color: #f5f5f5;
 
-    .contact-box {
-        margin-top: 19px;
+    .row-nav {
+        width: 60vw;
 
-        span {
-            color: #696969;
-            font-family: Roboto;
-            font-size: 14px;
-            font-weight: 400;
-        }
+        .contact-box {
+            margin-top: 19px;
 
-        .nav-icon-msg {
-            width: 20px;
-            height: 15px;
-        }
+            span {
+                color: #696969;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+            }
 
-        .nav-icon-phone {
-            width: 15px;
-            height: 15px;
+            .nav-icon-msg {
+                width: 20px;
+                height: 15px;
+            }
+
+            .nav-icon-phone {
+                width: 15px;
+                height: 15px;
+            }
         }
     }
 
-    .nav-question {
-        margin-left: 20vw;
-    }
-
-    .nav-contact,
-    .nav-number {
-        margin-left: -5vw;
-    }
 }
