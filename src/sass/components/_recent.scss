@@ -1,0 +1,46 @@
+.recent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 104px;
+    background-color: #fab702;
+
+    &-row {
+        width: 60vw;
+
+        .recent-title {
+            color: #ffffff;
+
+            font-family: Roboto;
+
+            font-size: 30px;
+
+            font-weight: 400;
+
+            line-height: 54px;
+
+            span {
+                color: #000;
+                font-family: "Roboto - Italic";
+
+                font-style: italic;
+
+                text-decoration: underline;
+            }
+        }
+
+        .recent-button {
+            width: 151px;
+            height: 48px;
+            margin: 10px;
+            outline: none;
+            background-color: #fff;
+            color: #fab702;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            border: none;
+        }
+    }
+
+}

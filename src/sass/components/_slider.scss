@@ -8,7 +8,6 @@
     &-box {
         width: 60vw;
 
-
         .title {
             width: 672px;
             height: 126px;
@@ -34,6 +33,7 @@
         .slider-button {
             width: 179px;
             height: 58px;
+            outline: none;
             background-color: #fab702;
             color: #ffffff;
             font-family: Roboto;
@@ -46,6 +46,4 @@
             }
         }
     }
-
-
 }
