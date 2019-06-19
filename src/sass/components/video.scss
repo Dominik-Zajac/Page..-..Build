@@ -1,0 +1,37 @@
+.video {
+    @include flexbox(flex, center, center);
+
+    .video-image {
+        width: 50vw;
+        max-height: 550px;
+    }
+
+    .row-video {
+        @include size(49.6vw, 550px);
+
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f8f8;
+
+        .container-video {
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+
+            .video-box {
+                margin-left: 25px;
+
+                .video-subtitle {
+                    @include text($second-font, 22px, 700, #3b404f);
+
+                    text-transform: uppercase;
+                }
+
+                .video-paragraph {
+                    @include size(368px, 62px);
+                    @include text($main-font, $paragraph-size, 400, $paragraph-color);
+                }
+            }
+        }
+    }
+}
