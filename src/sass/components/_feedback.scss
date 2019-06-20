@@ -1,0 +1,49 @@
+.feedback {
+    @include flexbox(flex, center, center);
+    flex-direction: column;
+
+    &-title {
+        @include text($second-font, 44px, 700, #3b404f);
+
+        margin-top: 10%;
+        text-transform: uppercase;
+    }
+
+    &-paragraph {
+        @include text($main-font, $paragraph-size, 400, $paragraph-color);
+
+        width: 642px;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .feedback-container {
+        display: flex;
+
+        img {
+            max-width: 136px;
+            max-height: 171px;
+        }
+
+        .feedback-box {
+            @include flexbox(flex, center, flex-start);
+
+            flex-direction: column;
+            background-color: #f9f9f9;
+            padding: 0 29px;
+
+            .text {
+                @include text($main-font, $paragraph-size, 400, $paragraph-color);
+
+                width: 368px;
+            }
+
+            .author {
+                @include text($second-font, 11px, 400, #3b404f);
+
+                text-transform: uppercase;
+                letter-spacing: 0.44px;
+            }
+        }
+    }
+}
