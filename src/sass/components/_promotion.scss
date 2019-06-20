@@ -1,0 +1,9 @@
+.promotion {
+    display: flex;
+    justify-content: center;
+
+    &-row {
+        max-width: 60vw;
+        margin: 5% 0;
+    }
+}
