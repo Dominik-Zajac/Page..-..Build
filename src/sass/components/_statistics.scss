@@ -1,0 +1,26 @@
+.statistics {
+    display: flex;
+    justify-content: center;
+    background-color: $main-color;
+
+    &-row {
+        @include flexbox(flex, center, center);
+
+        width: 60vw;
+        min-height: 217px;
+
+        .statistics-box {
+            text-align: center;
+
+            .statistics-subtitle {
+                @include text($main-font, 13px, 400, #fff);
+
+                text-transform: uppercase;
+            }
+
+            .statistics-number {
+                @include text($second-font, 50px, 400, #fff);
+            }
+        }
+    }
+}
