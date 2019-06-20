@@ -4,6 +4,7 @@
 
 // Global 
 @import "normalize";
+@import "animations";
 
 // Components
 @import "./components/top-nav";
@@ -12,3 +13,4 @@
 @import "./components/recent";
 @import "./components/services";
 @import "./components/video";
+@import "./components/featured.scss";
