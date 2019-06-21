@@ -1,0 +1,52 @@
+.information {
+    @include flexbox(flex, center, center);
+
+    min-height: 319px;
+    background-color: #f9f9f9;
+
+    &-container {
+        @include size(60vw, 119px);
+
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 1px solid #f1f1f1;
+        background-color: #fff;
+
+        &:before {
+            @include size(4px, 119px);
+
+            content: '';
+            position: absolute;
+            background-color: $main-color;
+        }
+
+        .information-box {
+            @include size(850px, 43px);
+
+            margin: 0 39px;
+
+            .info-title {
+                @include text($second-font, 20px, 400, #3b404f);
+            }
+
+            .info-paragraph {
+                @include text($main-font, 13px, 400, $paragraph-color);
+            }
+        }
+
+        .info-btn {
+            @include size(171px, 43px);
+            @include text($main-font, $paragraph-size, 400, #fff);
+
+            border: none;
+            outline: none;
+            text-transform: capitalize;
+            background-color: $main-color;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
