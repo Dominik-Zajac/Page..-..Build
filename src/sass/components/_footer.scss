@@ -2,6 +2,7 @@
     @include flexbox(flex, center, center);
 
     min-height: 448px;
+    margin-top: 10%;
     background-color: #252c3a;
 
     &-row {
@@ -15,6 +16,7 @@
                 margin-bottom: 12%;
             }
 
+            /* 1-col */
             .post {
                 @include text($main-font, 13px, 400, #fff);
 
@@ -24,6 +26,7 @@
                 border-bottom: 1px solid #303744;
             }
 
+            /* 2-col */
             .recent-news_box {
                 display: flex;
                 margin-bottom: 8%;
@@ -48,6 +51,79 @@
 
                     font-size: 11px;
                 }
+            }
+
+            /* 3-col */
+            .contact-box {
+                padding-bottom: 10px;
+                border-bottom: 1px solid #303744;
+
+                .contact-icon {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 8px;
+                    color: #fff;
+                    font-size: 16px;
+                }
+
+                .contact-text {
+                    @include text($main-font, 13px, 400, #fff);
+
+                    width: 173px;
+                }
+            }
+
+            .icons-container {
+                margin-top: 5%;
+                color: #fff;
+                font-size: 22px;
+
+                .contact-info_icon {
+                    padding-right: 8px;
+                    cursor: pointer;
+                    font-size: 22px;
+
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+
+            /* 4-col */
+            .mailing-text {
+                @include text($main-font, 13px, 400, #fafafa);
+
+                width: 258px;
+                line-height: 22px;
+            }
+
+            .form {
+                min-width: 300px;
+                margin: 10px 0;
+
+                .mail-input {
+                    @include size(200px, 38px);
+
+                    padding: 15px;
+                    background-color: #fff;
+                }
+
+                .mail-btn {
+                    @include size(70px, 38px);
+
+                    margin-left: -5px;
+                    border: none;
+                    color: #fff;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    background-color: $main-color;
+                }
+            }
+
+            .info-privacy {
+                color: #919191;
+                font-size: 12px;
             }
         }
     }
