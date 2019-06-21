@@ -1,0 +1,71 @@
+.news {
+    @include flexbox(flex, center, center);
+
+    flex-direction: column;
+
+    &-title {
+        @include text($second-font, 44px, 700, #3b404f);
+
+        margin: 10% 0 2% 0;
+        text-transform: uppercase;
+    }
+
+    &-paragraph {
+        @include text($main-font, $paragraph-size, 400, $paragraph-color);
+
+        width: 642px;
+        margin-bottom: 5%;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    &-row {
+        max-width: 60vw;
+    }
+
+    &-box {
+        @include flexbox(flex, center, flex-start);
+        flex-direction: column;
+
+        img {
+            max-width: 361px;
+            max-height: 236px;
+        }
+
+        .subtitle {
+            @include text($second-font, 22px, 700, #3b404f);
+
+            margin: 5% 0 3%;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+
+        .date-box {
+            @include text($main-font, 11px, 400, $paragraph-color);
+
+            margin-bottom: 5%;
+            text-transform: uppercase;
+        }
+
+        .text {
+            @include text($main-font, $paragraph-size, 400, $paragraph-color);
+
+            line-height: 24px;
+        }
+
+        .news-btn {
+            @include text($main-font, $paragraph-size, 400, $paragraph-color);
+
+            padding: 0 0 5px 0;
+            text-transform: uppercase;
+            background-color: inherit;
+            border: 1px solid #fff;
+            transition: 0.5s;
+
+            &:hover {
+                color: #ffb700;
+                border-bottom: 1px solid #ffb700;
+            }
+        }
+    }
+}
