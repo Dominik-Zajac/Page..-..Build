@@ -1,0 +1,13 @@
+.end-line {
+    @include flexbox(flex, center, center);
+
+    height: 50px;
+    background-color: #4c5b6d;
+
+    .text {
+        @include text($main-font, 13px, 400, #d8deff);
+
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+}
