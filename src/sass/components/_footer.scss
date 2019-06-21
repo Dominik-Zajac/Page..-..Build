@@ -1,0 +1,54 @@
+.footer {
+    @include flexbox(flex, center, center);
+
+    min-height: 448px;
+    background-color: #252c3a;
+
+    &-row {
+        max-width: 90vw;
+
+        .footer-box {
+
+            .box-title {
+                @include text($main-font, $paragraph-size, 400, #fff);
+
+                margin-bottom: 12%;
+            }
+
+            .post {
+                @include text($main-font, 13px, 400, #fff);
+
+                margin: 15px 0;
+                padding-bottom: 5px;
+                line-height: 22px;
+                border-bottom: 1px solid #303744;
+            }
+
+            .recent-news_box {
+                display: flex;
+                margin-bottom: 8%;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #303744;
+
+                .news-photo {
+                    max-width: 63px;
+                    max-height: 63px;
+                    margin-right: 8%;
+                }
+
+                .title {
+                    @include text($main-font, 13px, 400, #fff);
+
+                    max-width: 163px;
+                    margin-bottom: -1%;
+                }
+
+                .date {
+                    @extend .title;
+
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
