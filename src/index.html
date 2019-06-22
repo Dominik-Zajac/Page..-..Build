@@ -7,6 +7,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Build - Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Roboto:400,500&display=swap"
@@ -39,14 +40,30 @@
             <div class="col-md-6">
                 <a href="#"><img src="./img/Logo.png" alt="Logo" class="logo"></a>
             </div>
-            <div class="col-md-1"><a class="nav-link" href="#">About</a></div>
-            <div class="col-md-1"><a class="nav-link" href="#">Features</a></div>
-            <div class="col-md-1"><a class="nav-link" href="#">Project</a></div>
-            <div class="col-md-1"><a class="nav-link" href="#">Pages</a></div>
-            <div class="col-md-1"><a class="nav-link" href="#">Contact</a></div>
-            <div class="col-md-1"><a class="nav-link" href="#"><i class="fa fa-search"></i></a></div>
+            <div class="col-md-1 nav-box"><a class="nav-link" href="#">About</a></div>
+            <div class="col-md-1 nav-box"><a class="nav-link" href="#">Features</a></div>
+            <div class="col-md-1 nav-box"><a class="nav-link" href="#">Project</a></div>
+            <div class="col-md-1 nav-box"><a class="nav-link" href="#">Pages</a></div>
+            <div class="col-md-1 nav-box"><a class="nav-link" href="#">Contact</a></div>
+            <div class="col-md-1 nav-box"><a class="nav-link" href="#"><i class="fa fa-search"></i></a></div>
         </div>
     </nav>
+    <!-- Hamburger menu -->
+    <div class="hamburger-menu">
+        <a href="#" class="navicon"></a>
+        <div class="toggle">
+            <ul class="toggle-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="search">
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+    </div>
     <!-- Slider -->
     <div class="slider">
         <div class="slider-box">
