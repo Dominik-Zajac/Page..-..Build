@@ -23,3 +23,10 @@
         }
     }
 }
+
+/* Media queries */
+@media(max-width: 767px) {
+    .bottom-nav {
+        display: none;
+    }
+}
