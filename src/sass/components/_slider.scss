@@ -41,8 +41,6 @@
 /* Media queries */
 @media(max-width: 768px) {
     .slider {
-        @include flexbox(flex, center, flex-start);
-
         height: 456px;
         padding-top: 5%;
 
