@@ -1,7 +1,7 @@
 .recent {
     @include flexbox(flex, center, center);
 
-    height: 104px;
+    min-height: 104px;
     background-color: $main-color;
 
     &-row {
@@ -28,6 +28,24 @@
             outline: none;
             background-color: #fff;
             border: none;
+        }
+    }
+}
+
+/* Media queries */
+@media(max-width: 767px) {
+    .recent {
+
+        &-row {
+            width: 90vw;
+            padding: 15px 0;
+            text-align: center;
+
+            .recent-title {
+                @include text($main-font, 20px, 400, #fff);
+
+                line-height: 24px;
+            }
         }
     }
 }
