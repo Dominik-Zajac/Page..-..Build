@@ -35,3 +35,36 @@
         }
     }
 }
+
+/* Media queries */
+@media(max-width: 992px) {
+    .video {
+        margin-top: 10%;
+
+        .video-image {
+            width: 100vw;
+        }
+
+        .row-video {
+            @include size(100vw, 800px);
+
+            text-align: center;
+
+            .container-video {
+                flex-direction: column;
+                margin-left: 0px;
+
+                img {
+                    margin: 5% 0;
+                }
+
+                .video-box {
+
+                    .video-paragraph {
+                        @include size(278px, 62px);
+                    }
+                }
+            }
+        }
+    }
+}
