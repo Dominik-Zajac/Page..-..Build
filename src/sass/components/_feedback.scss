@@ -47,3 +47,52 @@
         }
     }
 }
+
+/* Media queries */
+@media(max-width: 768px) {
+    .feedback {
+        text-align: center;
+
+        &-title {
+            font-size: 34px;
+        }
+
+        &-paragraph {
+            width: 85vw;
+        }
+
+        .feedback-container {
+            flex-direction: column;
+            align-items: center;
+            padding: 2% 0;
+            border-top: 1px solid $main-color;
+
+            img {
+                max-width: 136px;
+                max-height: 171px;
+            }
+
+            .feedback-box {
+                @include flexbox(flex, center, center);
+
+                max-width: 80vw;
+                padding: 15px 29px;
+
+                .text {
+                    @include text($main-font, $paragraph-size, 400, $paragraph-color);
+
+                    width: 80vw;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .feedback {
+
+        .text {
+            max-width: 30vw;
+        }
+    }
+}
