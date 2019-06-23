@@ -7,3 +7,21 @@
         margin: 5% 0;
     }
 }
+
+/* Media queries */
+@media(max-width: 768px) {
+    .promotion {
+        &-row {
+            text-align: center;
+            max-width: 100vw;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .promotion {
+        &-row {
+            max-width: 80vw;
+        }
+    }
+}
