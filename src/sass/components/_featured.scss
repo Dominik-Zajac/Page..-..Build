@@ -42,7 +42,8 @@
 
         .featured-box {
             @include flexbox(flex, center, flex-end);
-            @include size(500px, 300px);
+            @include size(20vw, 15vh);
+
 
             margin-right: 5px;
             margin-bottom: 5px;
@@ -89,6 +90,37 @@
                         color: #fff;
                     }
                 }
+            }
+        }
+    }
+}
+
+/* Media queries */
+@media(max-width: 991px) {
+    .featured {
+        text-align: center;
+
+        &-title {
+            font-size: 34px;
+        }
+
+        &-paragraph {
+            @include size(80vw, 62px);
+        }
+
+        &-links {
+            display: none;
+        }
+
+        .featured-row {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 12vh;
+
+            .featured-box {
+                @include size(300px, 200px);
+
+                margin-right: 0px;
             }
         }
     }
