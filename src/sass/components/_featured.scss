@@ -42,7 +42,7 @@
 
         .featured-box {
             @include flexbox(flex, center, flex-end);
-            @include size(20vw, 15vh);
+            @include size(25vw, 20vh);
 
 
             margin-right: 5px;
