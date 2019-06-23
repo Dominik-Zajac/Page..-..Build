@@ -24,3 +24,18 @@
         }
     }
 }
+
+/* Media queries */
+@media(max-width: 768px) {
+    .statistics {
+        padding: 5% 0;
+
+        &-row {
+            width: 100vw;
+
+            .statistics-number {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}
